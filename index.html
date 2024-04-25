@@ -1,0 +1,286 @@
+<!--Startup de tecnologías de la información, especializada en desarrollo de aplicaciones móviles. -->
+
+<!DOCTYPE html>
+
+<html lang="es" data-bs-theme="dark"> <!--Aplica el tema dark a toda la página-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Incorpora bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!--Incorpora las funcionalidades-->
+    <script src="js/funciones.js"></script>
+
+    <!--Incorpora el estilo-->
+    <link rel="stylesheet" href="css/estilo.css"></link>
+    <link rel="icon" href="img/logo.png">
+    <title>AppGenius</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Creacion de la barra de navegación-->
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <img src="img/logo.png" alt="" width="65" height="65">
+                <h2 id="nombreStartup">AppGenius</h2>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="inicio" href="" style="color: rgb(3, 131, 3);">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portafolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Nuestros clientes</a></li>
+                                <li><a class="dropdown-item" href="">Nuestros trabajos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sobre AppGenius</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">Socios y Afiliaciones</a></li>
+                                <li><a class="dropdown-item" href="">Premios</a></li>
+                                <li><a class="dropdown-item" href="">Nuestra historia</a></li>
+                                <li><a class="dropdown-item" href="">Comentarios de clientes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Titulo principal-->
+        <h1>Desarrollamos tu app</h1>
+
+        <!--Primera Fila de la pagina-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-5">
+
+                    <!--Creación del carrucel-->
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Carrusel/Lefersa.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Carrusel/Isapre.svg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Carrusel/Simi.svg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-7">
+
+                <h2>Contáctanos</h2>
+
+                    <!--Creación de la tarjeta-->
+                    <div>
+                        <div class="card-body">
+                        
+                        <!--Cración del formulario-->
+                        <form>
+                            <div>
+                                <p class="titulosForm">Nombre</p>
+                                <input type="text" class="form-control border border" id="nombre">
+                            </div>
+                            <div>
+                                <p class="titulosForm">Teléfono</p>
+                                <input type="text" class="form-control border border" id="telefono">
+                            </div>
+                            <div>
+                                <p class="titulosForm">Correo Electrónico</p>
+                                <input type="email" class="form-control border border" id="correo" placeholder="name@example.com">
+                            </div>
+                            <div>
+                                <p class="titulosForm">Descripción del proyecto</p>
+                                <textarea class="form-control border border" id="descripcion" rows="3"></textarea>
+                            </div>
+                        </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Segunda Fila de la pagina-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Desarrollo de Aplicaciones Móviles Multiplataforma</h3>
+                    <p class="parrafos">Nuestras aplicaciones móviles multiplataforma personalizadas están creadas con muchas características y funciones personalizadas que optimizan la experiencia del usuario.</p>
+                </div>
+                <div class="col">
+                    <h3>Desarrollo de Aplicaciones Móviles Nativas</h3>
+                    <p class="parrafos">Creamos aplicaciones móviles nativas intuitivas, seguras y de alto rendimiento para brindar la mejor experiencia de usuario, ayudar a las empresas a mejorar sus tasas de conversión y aumentar la lealtad de los clientes.</p>
+                </div>
+                <div class="col">
+                    <h3>Desarrollo de Aplicaciones Móviles Híbridas</h3>
+                    <p class="parrafos">Creamos aplicaciones móviles híbridas utilizando el marco PhoneGap , construido con JavaScript, HTML y CSS, para permitir que las empresas lleguen a más clientes en cualquier dispositivo móvil.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Tercera Fila de la pagina-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Desarrollo de Aplicaciones Móviles Empresariales</h3>
+                    <p class="parrafos">Creamos aplicaciones móviles empresariales que cumplen con los requisitos de seguridad y confiabilidad para que las organizaciones más grandes aumenten la productividad, optimicen los flujos de trabajo y brinden mayor visibilidad y control.</p>
+                </div>
+                <div class="col">
+                    <h3>Diseño y Desarrollo de UX/UI</h3>
+                    <p class="parrafos">Mejoramos el aspecto, la sensación y la funcionalidad de su aplicación móvil existente mediante la integración de funciones personalizadas y la creación de nuevos diseños para mejorar la estética, la navegación y la capacidad de respuesta móvil.</p>
+                </div>
+                <div class="col">
+                    <h3>Soporte y Mantenimiento de Aplicaciones Móviles</h3>
+                    <p class="parrafos">Brindamos soporte y mantenimiento temporal después de desarrollar e implementar su aplicación móvil, asegurando que funcione en condiciones óptimas en todos los dispositivos y que no haya errores.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Cuarta fila de la página-->
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-7">
+
+                    <h2>Preguntas Frecuentes</h2>
+
+                    <!--Creación de primera pregunta--> 
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#primera">
+                            <h4>¿Qué es el desarrollo de una aplicación móvil?</h4>
+                        </button>
+                    </p>
+                    <div class="collapse" id="primera">
+                        <div class="card card-body">
+                            <P class="parrafos">El desarrollo de una aplicación móvil es el proceso de crear software para su uso en dispositivos móviles como teléfonos inteligentes y tabletas. Involucra conocimientos, técnicas y procedimientos específicos.</P>
+                        </div>
+                    </div>
+
+                    <!--Segunda pregunta-->
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#segunda">
+                            <h4>¿Qué se necesita para desarrollar una app móvil?</h4>
+                        </button>
+                    </p>
+                    <div class="collapse" id="segunda">
+                        <div class="card card-body">
+                            <p class="parrafos">Para desarrollar una app móvil se requiere: definir objetivos, identificar mercado, conceptualizar la app, seleccionar tecnología, explorar opciones de desarrollo, probar exhaustivamente y publicar en tiendas de apps.</p>
+                        </div>
+                    </div>
+
+                    <!--Tercera pregunta-->
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#tercera">
+                            <h4>¿Qué es una aplicación en un dispositivo móvil?</h4>
+                        </button>
+                    </p>
+                    <div class="collapse" id="tercera">
+                        <div class="card card-body">
+                            <p class="parrafos">Una aplicación en un dispositivo móvil, conocida como app móvil, es un programa diseñado para funcionar en smartphones, tabletas y otros dispositivos móviles.</p>
+                        </div>
+                    </div>
+
+                    <!--Cuarta pregunta-->
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#cuarta">
+                            <h4>¿Qué debe tener una aplicación móvil?</h4>
+                        </button>
+                    </p>
+                    <div class="collapse" id="cuarta">
+                        <div class="card card-body">
+                            <p class="parrafos">Una app móvil debe tener: interfaz de usuario intuitiva, identidad de marca coherente, medidas de privacidad, navegación eficiente y capacidades analíticas.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col">
+
+                    <!--Creacion del segundo carrusel-->
+                    <div id="carouselExampleIndicators2" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/Carrusel2/foto2.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Carrusel2/foto3.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Carrusel2/foto-4.webp" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!--
+
+Debe considerar:
+
+-	Comentarios a nivel HTML para explicar las secciones construidas.
+
+Forma de entrega: 
+
+-	Acceso a repositorio en github personal
+-	Publicar en servidor web via SFTP
+
+Plazo para entrega:
+
+-	25 de abril, 23:59. Debe incorporar URL a Github y URL a sitio web.
+Método de evaluación: 
+-	Revisión de entregable 50%
+-	Preguntas sobre el código (3) 50% 
+
+
+-->
